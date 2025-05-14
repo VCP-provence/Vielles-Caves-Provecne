@@ -2,45 +2,47 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Distributeur de vins, spiritueux, jus de fruits et boissons artisanales à Marseille. Produits bio, HVE, vegan et grandes maisons. Livraison rapide.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vieilles Caves de Provence</title>
   <style>
     body {
       margin: 0;
       font-family: 'Georgia', serif;
-      background-color: #fff;
-      color: #111;
+      background-color: #ffffff;
+      color: #000;
     }
 
     header {
-      background-color: #9b4d4d;
-      color: #fff;
+      background-color: #994747;
+      padding: 40px 20px 60px;
       text-align: center;
-      padding: 80px 20px 60px;
       position: relative;
     }
 
     header .logo {
-      width: 90px;
       position: absolute;
       top: 20px;
       left: 20px;
-      border-radius: 50%;
+      width: 80px;
+      height: auto;
     }
 
     header h1 {
       font-size: 42px;
-      margin: 20px 0 10px;
+      color: #fff;
+      margin-top: 20px;
     }
 
     header p {
       font-size: 18px;
-      margin-bottom: 30px;
+      color: #f5f5f5;
+      margin-bottom: 20px;
     }
 
     .cta {
-      padding: 14px 28px;
+      display: inline-block;
+      margin-top: 15px;
+      padding: 12px 25px;
       background-color: #7a1e1e;
       color: #fff;
       text-decoration: none;
@@ -50,54 +52,47 @@
 
     section {
       padding: 60px 20px;
-      max-width: 1000px;
+      max-width: 900px;
       margin: auto;
     }
 
-    section h2 {
-      color: #9b4d4d;
-      font-size: 28px;
-      margin-bottom: 20px;
+    h2 {
+      color: #7a1e1e;
+      font-size: 30px;
     }
 
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 30px;
+      margin-top: 30px;
     }
 
     .card {
-      background-color: #f9f9f9;
-      border-left: 5px solid #9b4d4d;
+      background-color: #f9f6f2;
       padding: 20px;
-      border-radius: 10px;
+      border-radius: 12px;
+      border-left: 6px solid #a03d3d;
     }
 
     .contact, footer {
-      background-color: #f2f2f2;
+      background-color: #994747;
+      color: #fff;
       padding: 40px 20px;
-      color: #111;
-    }
-
-    .contact p, footer p {
-      margin: 8px 0;
-    }
-
-    .contact a {
-      color: #7a1e1e;
-      text-decoration: none;
-    }
-
-    footer {
       text-align: center;
-      font-size: 14px;
     }
+
+    .contact a, footer a {
+      color: #fff;
+      text-decoration: underline;
+    }
+
   </style>
 </head>
 <body>
 
   <header>
-    <img src="https://raw.githubusercontent.com/VCP-provence/Vieilles-Caves-Provecne/main/assets/vcp-logo.png" alt="Logo VCP" class="logo" />
+    <img src="assets/vcp-logo.png" alt="Logo VCP" class="logo" />
     <h1>Vieilles Caves de Provence</h1>
     <p>Distributeur de vins, jus, softs et spiritueux pour professionnels et particuliers</p>
     <a href="#contact" class="cta">Demander le catalogue</a>
@@ -105,7 +100,9 @@
 
   <section>
     <h2>Qui sommes-nous ?</h2>
-    <p>Basés à Marseille, nous distribuons vins, spiritueux, jus et boissons artisanales. Notre sélection valorise les producteurs bio, HVE, vegan, et les grandes maisons reconnues. Nous servons restaurants, bars, cavistes, épiceries, collectivités et particuliers exigeants. Réactivité, stock local, livraisons rapides : notre expertise à votre service.</p>
+    <p>
+      Basés à Marseille, nous distribuons vins, spiritueux, jus et boissons artisanales. Notre sélection valorise les producteurs bio, HVE, vegan, et les grandes maisons reconnues. Nous servons restaurants, bars, cavistes, épiceries, collectivités et particuliers exigeants. Réactivité, stock local, livraisons rapides : notre expertise à votre service.
+    </p>
   </section>
 
   <section>
@@ -132,7 +129,6 @@
 
   <section class="contact" id="contact">
     <h2>Contact</h2>
-    <p>Une question ? Un devis ? Contactez-nous :</p>
     <p>📍 137 boulevard Longchamps, 13001 Marseille</p>
     <p>📞 04 91 62 21 37</p>
     <p>📧 <a href="mailto:vcp13001@gmail.com">vcp13001@gmail.com</a></p>
