@@ -3,46 +3,41 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Distributeur de vins, spiritueux, jus de fruits et boissons artisanales à Marseille. Produits bio, HVE, vegan et grandes maisons. Livraison rapide."/>
   <title>Vieilles Caves de Provence</title>
   <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: 'Georgia', serif;
+      font-family: 'Merriweather', serif;
       background-color: #fff;
-      color: #000;
+      color: #1a1a1a;
     }
     header {
-      background-color: #994747;
-      padding: 60px 20px 40px;
+      background-color: #944444;
+      padding: 80px 20px 60px 20px;
       text-align: center;
       position: relative;
     }
     header h1 {
       font-family: 'Caveat Brush', cursive;
-      font-size: 50px;
-      color: white;
-      margin: 20px 0 10px;
+      font-size: 60px;
+      color: #fff;
+      margin: 0;
     }
     header p {
-      font-size: 18px;
-      color: #f5f5f5;
-    }
-    .logo {
-      position: absolute;
-      top: 20px;
-      left: 20px;
-      width: 80px;
-      height: auto;
+      font-size: 20px;
+      margin-top: 10px;
+      color: #fff;
     }
     .cta {
       display: inline-block;
-      margin-top: 20px;
-      padding: 12px 25px;
+      margin-top: 30px;
+      padding: 15px 30px;
       background-color: #7a1e1e;
       color: #fff;
       text-decoration: none;
-      border-radius: 6px;
+      border-radius: 8px;
       font-weight: bold;
     }
     section {
@@ -50,38 +45,44 @@
       max-width: 1000px;
       margin: auto;
     }
-    h2 {
+    section h2 {
       color: #7a1e1e;
-      font-size: 30px;
+      font-size: 32px;
+      margin-bottom: 20px;
     }
     .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 30px;
-      margin-top: 30px;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
     }
     .card {
-      background-color: #f9f6f2;
+      background-color: #f9f5ef;
       padding: 20px;
       border-radius: 12px;
-      border-left: 5px solid #a03d3d;
+      border-left: 8px solid #7a1e1e;
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+    .card img {
+      width: 60px;
+      height: auto;
+      border-radius: 6px;
     }
     .contact, footer {
-      background-color: #994747;
-      color: #fff;
+      background-color: #111;
       padding: 40px 20px;
-      text-align: center;
+      color: #f9f5ef;
     }
-    .contact a {
-      color: #fff;
-      text-decoration: underline;
+    .contact a, footer a {
+      color: #e5d3b3;
+      text-decoration: none;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <img src="assets/vcp-logo.png" alt="Logo VCP" class="logo" />
     <h1>Vieilles Caves de Provence</h1>
     <p>Distributeur de vins, jus, softs et spiritueux pour professionnels et particuliers</p>
     <a href="#contact" class="cta">Demander le catalogue</a>
@@ -89,54 +90,28 @@
 
   <section>
     <h2>Qui sommes-nous ?</h2>
-    <p>
-      Entreprise familiale fondée en 1954 par la famille Rossi.  
-      Basés à Marseille, nous distribuons vins, spiritueux, jus et boissons artisanales.  
-      Notre sélection valorise les producteurs bio, HVE, vegan, et les grandes maisons reconnues.  
-      Nous servons restaurants, bars, cavistes, épiceries, collectivités et particuliers exigeants.  
-      Réactivité, stock local, livraisons rapides : notre expérience à votre service.
-    </p>
-  </section>
-
-  <section>
-    <h2>Nos produits</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>🍷 Vins</h3>
-        <p>AOC et IGP : Provence, Languedoc, Vallée du Rhône, Bourgogne, Bordeaux... Rouges, blancs, rosés, formats classiques et magnums.</p>
-      </div>
-      <div class="card">
-        <h3>🥂 Champagne / Pétillant</h3>
-        <p>Maisons : Ruinart, Drappier, Chassenay d’Arce. Vins mousseux, ancestraux, sans alcool.</p>
-      </div>
-      <div class="card">
-        <h3>🥤 Jus & Softs</h3>
-        <p>Jus de fruits artisanaux Le MIA, bières artisanales, boissons sans alcool.</p>
-      </div>
-      <div class="card">
-        <h3>🥃 Spiritueux</h3>
-        <p>Whisky, rhum, vodka, Cap Corse, crèmes, liqueurs locales et internationales.</p>
-      </div>
-    </div>
+    <p>Entreprise familiale depuis 1954 par la famille Rossi. Basés à Marseille, nous distribuons vins, spiritueux, jus et boissons artisanales. Notre sélection valorise les producteurs bio, HVE, vegan, et les grandes maisons reconnues. Nous servons restaurants, bars, cavistes, épiceries, collectivités et particuliers exigeants. Réactivité, stock local, livraisons rapides : notre expérience à votre service.</p>
   </section>
 
   <section>
     <h2>Nos partenaires</h2>
     <div class="grid">
-      <div class="card"><p>Heineken</p></div>
-      <div class="card"><p>1664</p></div>
-      <div class="card"><p>Maîtres Vignerons de Saint-Tropez</p></div>
-      <div class="card"><p>Maison Paul Jaboulet Aîné</p></div>
-      <div class="card"><p>Cassis Bodin</p></div>
-      <div class="card"><p>Domaine de l'Ortus</p></div>
-      <div class="card"><p>Maison Camille Cayran</p></div>
-      <div class="card"><p>Domaine Fiumicicoli</p></div>
-      <div class="card"><p>Le MIA (jus de fruits artisanaux)</p></div>
+      <div class="card"><img src="assets/heineken.png" alt="Heineken"><span>Heineken</span></div>
+      <div class="card"><img src="assets/1664.png" alt="1664"><span>1664</span></div>
+      <div class="card"><img src="assets/vignerons-st-tropez.png" alt="Maîtres Vignerons de Saint-Tropez"><span>Maîtres Vignerons de Saint-Tropez</span></div>
+      <div class="card"><img src="assets/jaboulet-aine.png" alt="Paul Jaboulet Aîné"><span>Maison Paul Jaboulet Aîné</span></div>
+      <div class="card"><img src="assets/cassis-bodin.png" alt="Cassis Bodin"><span>Cassis Bodin</span></div>
+      <div class="card"><img src="assets/hortus.png" alt="Domaine de l'Hortus"><span>Domaine de l'Hortus</span></div>
+      <div class="card"><img src="assets/camille-cayran.png" alt="Camille Cayran"><span>Maison Camille Cayran</span></div>
+      <div class="card"><img src="assets/fiumicicoli.png" alt="Fiumicicoli"><span>Domaine Fiumicicoli</span></div>
+      <div class="card"><img src="assets/millat.png" alt="Millat"><span>Le MIA (jus de fruits artisanaux)</span></div>
+      <div class="card"><img src="assets/chateau-la-coste.png" alt="Château La Coste"><span>Château La Coste</span></div>
     </div>
   </section>
 
   <section class="contact" id="contact">
     <h2>Contact</h2>
+    <p>Une question ? Un devis ? Contactez-nous :</p>
     <p>📍 137 boulevard Longchamp, 13001 Marseille</p>
     <p>📞 04 91 62 21 37</p>
     <p>📧 <a href="mailto:vcp13001@gmail.com">vcp13001@gmail.com</a></p>
