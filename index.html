@@ -2,34 +2,44 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Distributeur de vins, spiritueux, jus de fruits et boissons artisanales à Marseille. Produits bio, HVE, vegan et grandes maisons. Livraison rapide."/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vieilles Caves de Provence</title>
   <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet">
   <style>
     body {
-      margin: 0;
       font-family: 'Merriweather', serif;
-      background-color: #fff;
+      background-color: #fffdf9;
+      margin: 0;
+      padding: 0;
       color: #1a1a1a;
     }
+
     header {
-      background-color: #944444;
-      padding: 80px 20px 60px 20px;
+      background-color: #8e3b3b;
+      color: white;
+      padding: 60px 20px;
       text-align: center;
       position: relative;
     }
+
+    header .logo {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      width: 80px;
+    }
+
     header h1 {
       font-family: 'Caveat Brush', cursive;
-      font-size: 60px;
-      color: #fff;
+      font-size: 64px;
       margin: 0;
     }
+
     header p {
       font-size: 20px;
       margin-top: 10px;
-      color: #fff;
     }
+
     .cta {
       display: inline-block;
       margin-top: 30px;
@@ -40,49 +50,70 @@
       border-radius: 8px;
       font-weight: bold;
     }
+
     section {
-      padding: 60px 20px;
       max-width: 1000px;
       margin: auto;
+      padding: 60px 20px;
     }
+
     section h2 {
       color: #7a1e1e;
       font-size: 32px;
-      margin-bottom: 20px;
+      margin-bottom: 30px;
     }
-    .grid {
+
+    section p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .partners {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
+      gap: 30px;
     }
-    .card {
+
+    .partner-card {
       background-color: #f9f5ef;
-      padding: 20px;
-      border-radius: 12px;
       border-left: 8px solid #7a1e1e;
-      display: flex;
-      align-items: center;
-      gap: 15px;
+      border-radius: 10px;
+      padding: 20px;
+      text-align: center;
     }
-    .card img {
-      width: 60px;
+
+    .partner-card img {
+      max-width: 150px;
       height: auto;
-      border-radius: 6px;
+      display: block;
+      margin: 0 auto 15px;
     }
-    .contact, footer {
-      background-color: #111;
-      padding: 40px 20px;
+
+    .contact {
+      background-color: #8e3b3b;
+      color: white;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .contact a {
       color: #f9f5ef;
+      text-decoration: underline;
     }
-    .contact a, footer a {
-      color: #e5d3b3;
-      text-decoration: none;
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      background-color: #111;
+      color: white;
     }
   </style>
 </head>
 <body>
 
   <header>
+    <img src="assets/vcp-logo.png" alt="Logo VCP" class="logo">
     <h1>Vieilles Caves de Provence</h1>
     <p>Distributeur de vins, jus, softs et spiritueux pour professionnels et particuliers</p>
     <a href="#contact" class="cta">Demander le catalogue</a>
@@ -90,22 +121,22 @@
 
   <section>
     <h2>Qui sommes-nous ?</h2>
-    <p>Entreprise familiale depuis 1954 par la famille Rossi. Basés à Marseille, nous distribuons vins, spiritueux, jus et boissons artisanales. Notre sélection valorise les producteurs bio, HVE, vegan, et les grandes maisons reconnues. Nous servons restaurants, bars, cavistes, épiceries, collectivités et particuliers exigeants. Réactivité, stock local, livraisons rapides : notre expérience à votre service.</p>
+    <p>Entreprise familiale fondée en 1954 par la famille Rossi. Basés à Marseille, nous distribuons vins, spiritueux, jus et boissons artisanales. Notre sélection valorise les producteurs bio, HVE, vegan, et les grandes maisons reconnues. Nous servons restaurants, bars, cavistes, épiceries, collectivités et particuliers exigeants. Réactivité, stock local, livraisons rapides : notre expertise à votre service.</p>
   </section>
 
   <section>
     <h2>Nos partenaires</h2>
-    <div class="grid">
-      <div class="card"><img src="assets/heineken.png" alt="Heineken"><span>Heineken</span></div>
-      <div class="card"><img src="assets/1664.png" alt="1664"><span>1664</span></div>
-      <div class="card"><img src="assets/vignerons-st-tropez.png" alt="Maîtres Vignerons de Saint-Tropez"><span>Maîtres Vignerons de Saint-Tropez</span></div>
-      <div class="card"><img src="assets/jaboulet-aine.png" alt="Paul Jaboulet Aîné"><span>Maison Paul Jaboulet Aîné</span></div>
-      <div class="card"><img src="assets/cassis-bodin.png" alt="Cassis Bodin"><span>Cassis Bodin</span></div>
-      <div class="card"><img src="assets/hortus.png" alt="Domaine de l'Hortus"><span>Domaine de l'Hortus</span></div>
-      <div class="card"><img src="assets/camille-cayran.png" alt="Camille Cayran"><span>Maison Camille Cayran</span></div>
-      <div class="card"><img src="assets/fiumicicoli.png" alt="Fiumicicoli"><span>Domaine Fiumicicoli</span></div>
-      <div class="card"><img src="assets/millat.png" alt="Millat"><span>Le MIA (jus de fruits artisanaux)</span></div>
-      <div class="card"><img src="assets/chateau-la-coste.png" alt="Château La Coste"><span>Château La Coste</span></div>
+    <div class="partners">
+      <div class="partner-card"><img src="assets/heineken.png" alt="Heineken"><div>Heineken</div></div>
+      <div class="partner-card"><img src="assets/1664.png" alt="1664"><div>1664</div></div>
+      <div class="partner-card"><img src="assets/vignerons-st-tropez.png" alt="Maîtres Vignerons de Saint-Tropez"><div>Maîtres Vignerons de Saint-Tropez</div></div>
+      <div class="partner-card"><img src="assets/jaboulet-aine.png" alt="Maison Paul Jaboulet Aîné"><div>Maison Paul Jaboulet Aîné</div></div>
+      <div class="partner-card"><img src="assets/cassis-bodin.png" alt="Cassis Bodin"><div>Cassis Bodin</div></div>
+      <div class="partner-card"><img src="assets/hortus.png" alt="Domaine de l'Hortus"><div>Domaine de l'Hortus</div></div>
+      <div class="partner-card"><img src="assets/camille-cayran.png" alt="Maison Camille Cayran"><div>Maison Camille Cayran</div></div>
+      <div class="partner-card"><img src="assets/fiumicicoli.png" alt="Domaine Fiumicicoli"><div>Domaine Fiumicicoli</div></div>
+      <div class="partner-card"><img src="assets/millat.png" alt="Le MIA (jus de fruits artisanaux)"><div>Le MIA (jus de fruits artisanaux)</div></div>
+      <div class="partner-card"><img src="assets/chateau-la-coste.png" alt="Château La Coste"><div>Château La Coste</div></div>
     </div>
   </section>
 
@@ -123,3 +154,5 @@
 
 </body>
 </html>
+
+  
