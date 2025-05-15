@@ -13,7 +13,6 @@
       padding: 0;
       color: #1a1a1a;
     }
-
     header {
       background-color: #8e3b3b;
       color: white;
@@ -21,25 +20,22 @@
       text-align: center;
       position: relative;
     }
-
     header .logo {
       position: absolute;
       top: 20px;
       left: 20px;
       width: 80px;
     }
-
     header h1 {
       font-family: 'Caveat Brush', cursive;
       font-size: 64px;
       margin: 0;
+      font-weight: normal;
     }
-
     header p {
       font-size: 20px;
       margin-top: 10px;
     }
-
     .cta {
       display: inline-block;
       margin-top: 30px;
@@ -50,57 +46,49 @@
       border-radius: 8px;
       font-weight: bold;
     }
-
     section {
       max-width: 1000px;
       margin: auto;
       padding: 60px 20px;
     }
-
     section h2 {
       color: #7a1e1e;
       font-size: 32px;
       margin-bottom: 30px;
     }
-
     section p {
       font-size: 16px;
       line-height: 1.6;
     }
-
-    .partners {
+    .grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 30px;
     }
-
-    .partner-card {
+    .product-card, .partner-card {
       background-color: #f9f5ef;
       border-left: 8px solid #7a1e1e;
       border-radius: 10px;
       padding: 20px;
       text-align: center;
     }
-
-    .partner-card img {
-      max-width: 150px;
+    .product-card img, .partner-card img {
+      max-width: 160px;
       height: auto;
       display: block;
       margin: 0 auto 15px;
+      border-radius: 10px;
     }
-
     .contact {
       background-color: #8e3b3b;
       color: white;
       padding: 50px 20px;
       text-align: center;
     }
-
     .contact a {
       color: #f9f5ef;
       text-decoration: underline;
     }
-
     footer {
       text-align: center;
       padding: 20px;
@@ -122,21 +110,19 @@
   <section>
     <h2>Qui sommes-nous ?</h2>
     <p>Entreprise familiale fondée en 1954 par la famille Rossi. Basés à Marseille, nous distribuons vins, spiritueux, jus et boissons artisanales. Notre sélection valorise les producteurs bio, HVE, vegan, et les grandes maisons reconnues. Nous servons restaurants, bars, cavistes, épiceries, collectivités et particuliers exigeants. Réactivité, stock local, livraisons rapides : notre expertise à votre service.</p>
+    <div class="partner-card" style="margin-top:40px;">
+      <img src="assets/fondateurs-vcp.png" alt="Photo des fondateurs de VCP">
+      <div>Les dirigeants actuels de Vieilles Caves de Provence</div>
+    </div>
   </section>
 
   <section>
-    <h2>Nos partenaires</h2>
-    <div class="partners">
-      <div class="partner-card"><img src="assets/heineken.png" alt="Heineken"><div>Heineken</div></div>
-      <div class="partner-card"><img src="assets/1664.png" alt="1664"><div>1664</div></div>
-      <div class="partner-card"><img src="assets/vignerons-st-tropez.png" alt="Maîtres Vignerons de Saint-Tropez"><div>Maîtres Vignerons de Saint-Tropez</div></div>
-      <div class="partner-card"><img src="assets/jaboulet-aine.png" alt="Maison Paul Jaboulet Aîné"><div>Maison Paul Jaboulet Aîné</div></div>
-      <div class="partner-card"><img src="assets/cassis-bodin.png" alt="Cassis Bodin"><div>Cassis Bodin</div></div>
-      <div class="partner-card"><img src="assets/hortus.png" alt="Domaine de l'Hortus"><div>Domaine de l'Hortus</div></div>
-      <div class="partner-card"><img src="assets/camille-cayran.png" alt="Maison Camille Cayran"><div>Maison Camille Cayran</div></div>
-      <div class="partner-card"><img src="assets/fiumicicoli.png" alt="Domaine Fiumicicoli"><div>Domaine Fiumicicoli</div></div>
-      <div class="partner-card"><img src="assets/millat.png" alt="Le MIA (jus de fruits artisanaux)"><div>Le MIA (jus de fruits artisanaux)</div></div>
-      <div class="partner-card"><img src="assets/chateau-la-coste.png" alt="Château La Coste"><div>Château La Coste</div></div>
+    <h2>Notre sélection</h2>
+    <div class="grid">
+      <div class="product-card">
+        <img src="assets/almadinote.png" alt="Alma Di Note">
+        <div>Alma Di Note Rosé & Blanc</div>
+      </div>
     </div>
   </section>
 
@@ -154,5 +140,3 @@
 
 </body>
 </html>
-
-  
