@@ -1,174 +1,163 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Vieilles Caves de Provence</title>
-  <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet">
-  <style>
-    body {
-      margin: 0;
-      font-family: "Georgia", serif;
-      background-color: #fdfaf6;
-    }
+    <meta charset="UTF-8">
+    <title>Vieilles Caves de Provence</title>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Georgia', serif;
+            background-color: #fefaf6;
+            color: #511c1c;
+        }
 
-    header {
-      background-color: #6a1b1b;
-      color: white;
-      text-align: center;
-      padding: 20px 10px;
-    }
+        header {
+            background-color: #701c1c;
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+        }
 
-    header h1 {
-      font-family: 'Caveat Brush', cursive;
-      font-size: 3em;
-      font-weight: normal;
-    }
+        header img {
+            width: 80px;
+        }
 
-    .catalog-button-top {
-      display: inline-block;
-      background-color: white;
-      color: #6a1b1b;
-      padding: 12px 24px;
-      border: 2px solid #6a1b1b;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      margin-top: 15px;
-    }
+        h1 {
+            font-family: 'Caveat Brush', cursive;
+            font-size: 40px;
+            margin: 10px 0 0 0;
+        }
 
-    section {
-      padding: 50px 20px;
-    }
+        section {
+            padding: 40px 20px;
+        }
 
-    h2 {
-      font-size: 2em;
-      margin-bottom: 20px;
-      color: #6a1b1b;
-    }
+        .box {
+            background-color: #fdf8f2;
+            border-radius: 10px;
+            padding: 30px;
+            margin: 20px auto;
+            max-width: 900px;
+            text-align: center;
+            box-shadow: 5px 5px 0px #cc9999;
+        }
 
-    .card {
-      background-color: #f9f5f1;
-      border-left: 8px solid #6a1b1b;
-      margin: 20px auto;
-      padding: 20px;
-      max-width: 800px;
-      border-radius: 10px;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-      text-align: center;
-    }
+        h2 {
+            color: #701c1c;
+            font-size: 28px;
+        }
 
-    .card img {
-      width: 200px;
-      max-height: 300px;
-      object-fit: contain;
-      margin-bottom: 10px;
-      border-radius: 10px;
-    }
+        .wine-selection {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
 
-    .products-grid {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
+        .wine-box {
+            background-color: #fdf8f2;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            width: 220px;
+            box-shadow: 5px 5px 0px #cc9999;
+        }
 
-    .contact {
-      background-color: #6a1b1b;
-      color: white;
-      text-align: center;
-      padding: 40px 20px;
-    }
+        .wine-box img {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
 
-    .contact h2 {
-      color: white;
-    }
+        .catalogue-button {
+            display: block;
+            background-color: #701c1c;
+            color: white;
+            padding: 15px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 40px auto 20px auto;
+            width: fit-content;
+        }
 
-    .catalog-button {
-      display: inline-block;
-      background-color: #6a1b1b;
-      color: white;
-      padding: 12px 24px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-size: 1.1em;
-      margin-top: 30px;
-    }
-  </style>
+        footer {
+            background-color: #701c1c;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        a {
+            color: inherit;
+        }
+    </style>
 </head>
 <body>
 
-  <header>
-    <img src="assets/vcp.png" alt="Logo VCP" style="width: 100px;" />
+<header>
+    <img src="assets/vcp-logo.png" alt="Logo VCP" />
     <h1>Vieilles Caves de Provence</h1>
-    <a href="#contact" class="catalog-button-top">Demander le catalogue</a>
-  </header>
+</header>
 
-  <section>
-    <div class="card">
-      <h2>Qui sommes-nous ?</h2>
-      <p>Entreprise familiale fondée en 1954 par la famille Rossi, les Vieilles Caves de Provence sont spécialisées dans la distribution de vins, champagnes, bières et jus artisanaux.</p>
-      <p>Notre expérience est à votre service pour vous proposer une sélection rigoureuse de produits authentiques et de qualité.</p>
+<section>
+    <div class="box">
+        <h2>Qui sommes-nous ?</h2>
+        <p>Entreprise familiale fondée en 1954 par la famille Rossi, les Vieilles Caves de Provence sont spécialisées dans la distribution de vins, champagnes, bières et jus artisanaux.</p>
+        <p>Notre expérience est à votre service pour vous proposer une sélection rigoureuse de produits authentiques et de qualité.</p>
     </div>
 
-    <div class="card">
-      <img src="assets/fondateurs-vcp.png" alt="Photo des fondateurs de VCP" />
-      <p>Les dirigeants actuels de Vieilles Caves de Provence</p>
+    <div class="box">
+        <img src="assets/fondateurs-vcp.png" alt="Photo des fondateurs de VCP" style="max-width: 250px;" />
+        <p>Les dirigeants actuels de Vieilles Caves de Provence</p>
     </div>
-  </section>
+</section>
 
-  <section>
+<section>
     <h2 style="text-align:center;">Notre sélection</h2>
-    <div class="products-grid">
-
-      <div class="card">
-        <img src="assets/almadi-note.png" alt="Alma Di Note">
-        <h3>Alma Di Note</h3>
-        <p>Rosé & Blanc - Île de Beauté</p>
-      </div>
-
-      <div class="card">
-        <img src="assets/camille-cayran-reserve-rouge.png" alt="Camille Cayran Réserve Rouge">
-        <h3>Camille Cayran</h3>
-        <p>Réserve Rouge - Cairanne</p>
-      </div>
-
-      <div class="card">
-        <img src="assets/chateau-fontvive-rose.png" alt="Château Fontvive Rosé">
-        <h3>Château de Fontvive</h3>
-        <p>Rosé - Bandol</p>
-      </div>
-
-      <div class="card">
-        <img src="assets/chateau-fontvive-rouge.png" alt="Château Fontvive Rouge">
-        <h3>Château de Fontvive</h3>
-        <p>Rouge - Bandol</p>
-      </div>
-
-      <div class="card">
-        <img src="assets/dangin-fays.png" alt="Dangin Fays Champagne">
-        <h3>Dangin Fays</h3>
-        <p>Champagne Brut</p>
-      </div>
-
-      <div class="card">
-        <img src="assets/domaine-fontvive.png" alt="Domaine Fontvive Blancs">
-        <h3>Domaine de Fontvive</h3>
-        <p>Blancs - Fontblanche</p>
-      </div>
-
+    <div class="wine-selection">
+        <div class="wine-box">
+            <img src="assets/almadi-note.png" alt="Alma Di Note">
+            <strong>Alma Di Note</strong><br>Rosé & Blanc
+        </div>
+        <div class="wine-box">
+            <img src="assets/chateau-fontvive-rose.png" alt="Fontvive Rosé">
+            <strong>Château Fontvive</strong><br>Rosé
+        </div>
+        <div class="wine-box">
+            <img src="assets/chateau-fontvive-rouge.png" alt="Fontvive Rouge">
+            <strong>Château Fontvive</strong><br>Rouge
+        </div>
+        <div class="wine-box">
+            <img src="assets/camille-cayran-reserve-rouge.png" alt="Camille Cayran">
+            <strong>Camille Cayran</strong><br>Réserve Rouge
+        </div>
+        <div class="wine-box">
+            <img src="assets/domaine-fontvive.png" alt="Domaine Fontvive">
+            <strong>Domaine Fontvive</strong>
+        </div>
+        <div class="wine-box">
+            <img src="assets/dangin-fays.png" alt="Dangin Fays">
+            <strong>Dangin-Fays</strong><br>Champagne Brut
+        </div>
+        <div class="wine-box">
+            <img src="assets/villa-treva.png" alt="Villa Treva">
+            <strong>Villa Tréva</strong><br>Rosé
+        </div>
     </div>
-  </section>
 
-  <section class="contact" id="contact">
+    <a href="#contact" class="catalogue-button">Demander le catalogue</a>
+</section>
+
+<footer id="contact">
     <h2>Contact</h2>
-    <p>📍 Adresse : 123 Route des Vins, 13100 Aix-en-Provence</p>
-    <p>📞 Téléphone : 04 00 00 00 00</p>
-    <p>📧 Email : contact@vcp.fr</p>
-  </section>
+    <p>📍 123 Route des Vins, Provence, France</p>
+    <p>📞 04 94 00 00 00</p>
+    <p>✉️ contact@vieillescaves.fr</p>
+</footer>
 
 </body>
 </html>
 
-   
    
