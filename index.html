@@ -87,6 +87,31 @@
       object-fit: contain;
     }
 
+    .partners-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .partner-card {
+      background-color: #fdf8f2;
+      border-radius: 10px;
+      padding: 15px;
+      width: 180px;
+      text-align: center;
+      box-shadow: 5px 5px 0px #cc9999;
+    }
+
+    .partner-card img {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      max-height: 100px;
+    }
+
     footer {
       background-color: #701c1c;
       color: white;
@@ -99,7 +124,7 @@
     }
 
     @media screen and (max-width: 768px) {
-      .wine-card {
+      .wine-card, .partner-card {
         flex: 0 0 100%;
       }
     }
@@ -124,7 +149,6 @@
     <p>Les dirigeants actuels de Vieilles Caves de Provence</p>
   </div>
 
-  <!-- 👇 Bouton ici, juste en dessous -->
   <a href="#contact" class="catalogue-button">Demander le catalogue</a>
 </section>
 
@@ -165,6 +189,58 @@
     <div class="wine-card">
       <img src="assets/villa-treva.png" alt="Villa Tréva">
       <strong>Villa Tréva</strong><br>Rosé
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <h2 style="text-align:center;">Nos partenaires</h2>
+  <div class="partners-grid">
+
+    <div class="partner-card">
+      <img src="assets/heineken.png" alt="Heineken">
+      <p>Heineken</p>
+    </div>
+
+    <div class="partner-card">
+      <img src="assets/1664.png" alt="1664">
+      <p>1664</p>
+    </div>
+
+    <div class="partner-card">
+      <img src="assets/vignerons-st-tropez.png" alt="Vignerons St-Tropez">
+      <p>Maîtres Vignerons<br>de Saint-Tropez</p>
+    </div>
+
+    <div class="partner-card">
+      <img src="assets/jaboulet-aine.png" alt="Paul Jaboulet Aîné">
+      <p>Paul Jaboulet Aîné</p>
+    </div>
+
+    <div class="partner-card">
+      <img src="assets/cassis-bodin.png" alt="Cassis Bodin">
+      <p>Cassis Bodin</p>
+    </div>
+
+    <div class="partner-card">
+      <img src="assets/hortus.png" alt="Domaine de l’Hortus">
+      <p>Domaine de l’Hortus</p>
+    </div>
+
+    <div class="partner-card">
+      <img src="assets/camille-cayran.png" alt="Camille Cayran">
+      <p>Camille Cayran</p>
+    </div>
+
+    <div class="partner-card">
+      <img src="assets/fiumicicoli.png" alt="Fiumicicoli">
+      <p>Domaine Fiumicicoli</p>
+    </div>
+
+    <div class="partner-card">
+      <img src="assets/millat.png" alt="Alain Millat">
+      <p>Le MIA<br>(jus artisanaux)</p>
     </div>
 
   </div>
