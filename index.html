@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
@@ -25,6 +25,18 @@
       font-weight: normal;
     }
 
+    .catalog-button-top {
+      display: inline-block;
+      background-color: white;
+      color: #6a1b1b;
+      padding: 12px 24px;
+      border: 2px solid #6a1b1b;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 15px;
+    }
+
     section {
       padding: 50px 20px;
     }
@@ -47,10 +59,11 @@
     }
 
     .card img {
-      width: 150px;
-      max-height: 200px;
+      width: 200px;
+      max-height: 300px;
       object-fit: contain;
       margin-bottom: 10px;
+      border-radius: 10px;
     }
 
     .products-grid {
@@ -86,57 +99,25 @@
 <body>
 
   <header>
+    <img src="assets/vcp.png" alt="Logo VCP" style="width: 100px;" />
     <h1>Vieilles Caves de Provence</h1>
+    <a href="#contact" class="catalog-button-top">Demander le catalogue</a>
   </header>
 
   <section>
     <div class="card">
+      <h2>Qui sommes-nous ?</h2>
+      <p>Entreprise familiale fondée en 1954 par la famille Rossi, les Vieilles Caves de Provence sont spécialisées dans la distribution de vins, champagnes, bières et jus artisanaux.</p>
+      <p>Notre expérience est à votre service pour vous proposer une sélection rigoureuse de produits authentiques et de qualité.</p>
+    </div>
+
+    <div class="card">
       <img src="assets/fondateurs-vcp.png" alt="Photo des fondateurs de VCP" />
-      <p><strong>Les dirigeants actuels de Vieilles Caves de Provence</strong></p>
+      <p>Les dirigeants actuels de Vieilles Caves de Provence</p>
     </div>
   </section>
 
-  <section>
-    <h2>Notre sélection</h2>
-
-    <div class="products-grid">
-
-      <div class="card">
-        <img src="assets/almadi-note.png" alt="Alma Di Note" />
-        <p><strong>Alma Di Note</strong><br>Rosé & Blanc</p>
-      </div>
-
-      <div class="card">
-        <img src="assets/camille-cayran-reserve-rouge.png" alt="Camille Cayran Réserve Rouge" />
-        <p><strong>Camille Cayran</strong><br>La Réserve Rouge</p>
-      </div>
-
-      <div class="card">
-        <img src="assets/chateau-fontvive-rose.png" alt="Château de Fontvive Rosé" />
-        <p><strong>Château de Fontvive</strong><br>Rosé</p>
-      </div>
-
-      <div class="card">
-        <img src="assets/chateau-fontvive-rouge.png" alt="Château de Fontvive Rouge" />
-        <p><strong>Château de Fontvive</strong><br>Rouge</p>
-      </div>
-
-      <div class="card">
-        <img src="assets/dangin-fays.png" alt="Dangin-Fays Champagne" />
-        <p><strong>Dangin-Fays</strong><br>Champagne Brut</p>
-      </div>
-
-      <div class="card">
-        <img src="assets/domaine-fontvive.png" alt="Domaine Fontvive" />
-        <p><strong>Domaine de Fontvive</strong><br>Blancs & Rosés</p>
-      </div>
-
-    </div>
-
-    <div style="text-align:center; margin-top: 30px;">
-      <a href="#contact" class="catalog-button">Demander le catalogue</a>
-    </div>
-  </section>
+  <!-- Tu peux ajouter ici ta section sélection, partenaires, etc. -->
 
   <section class="contact" id="contact">
     <h2>Contact</h2>
@@ -147,6 +128,3 @@
 
 </body>
 </html>
-
-
-       
