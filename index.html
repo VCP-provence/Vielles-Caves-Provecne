@@ -5,101 +5,101 @@
     <title>Vieilles Caves de Provence</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #fdf9f5;
             margin: 0;
-            padding: 0;
-            color: #5a0000;
+            font-family: Arial, sans-serif;
+            background-color: #fdf9f4;
+            color: #5c0a0a;
         }
-
         header {
             background-color: #6e1e1e;
             text-align: center;
             padding: 20px;
         }
-
         header img {
-            height: 80px;
+            width: 80px;
+            margin-bottom: 10px;
         }
-
-        h1 {
-            font-family: Arial, sans-serif;
-            font-size: 30px;
-            color: white;
-            margin: 10px 0;
+        header h1 {
+            font-family: "Comic Sans MS", cursive, sans-serif;
+            font-size: 28px;
+            color: #fff;
+            margin: 0;
         }
-
-        section {
-            margin: 40px auto;
-            max-width: 1000px;
-            padding: 20px;
-            background-color: #fdf9f5;
-            border-radius: 8px;
-            box-shadow: 5px 5px 0 #c77b6d;
-        }
-
-        h2 {
-            font-family: Georgia, serif;
-            font-size: 26px;
-            text-align: center;
-            color: #5a0000;
-        }
-
-        .center {
+        .section {
+            background-color: #fdf9f4;
+            margin: 30px;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 0 #d6a6a6;
             text-align: center;
         }
-
-        .products {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 40px;
-        }
-
-        .product {
-            width: 200px;
-            text-align: center;
-        }
-
-        .product img {
-            width: 100%;
+        .section img {
+            max-width: 100%;
             height: auto;
         }
-
-        .cta-button {
-            display: block;
-            width: fit-content;
-            margin: 20px auto;
-            padding: 10px 25px;
-            background-color: #6e1e1e;
-            color: white;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        footer {
-            background-color: #fdf9f5;
-            padding: 40px;
-            text-align: center;
-        }
-
-        .partners-logos {
+        .selection-grid {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             gap: 30px;
-            margin-top: 20px;
         }
-
-        .partners-logos img {
+        .bottle {
+            width: 180px;
+            background-color: #fdf9f4;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 4px 4px 0 #d6a6a6;
+        }
+        .bottle img {
+            height: 300px;
+            object-fit: contain;
+        }
+        .partners {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .partner-logo {
+            width: 150px;
+            padding: 10px;
+            background-color: #fdf9f4;
+            border-radius: 10px;
+            box-shadow: 4px 4px 0 #d6a6a6;
+            text-align: center;
+        }
+        .partner-logo img {
+            max-width: 100%;
             height: 60px;
+            object-fit: contain;
         }
-
-        .social-icon {
-            height: 20px;
-            vertical-align: middle;
-            margin-right: 5px;
+        .contact {
+            background-color: #6e1e1e;
+            color: white;
+            padding: 40px;
+            text-align: center;
+        }
+        .btn {
+            background-color: #6e1e1e;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin-top: 15px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+        .instagram {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        .instagram img {
+            width: 24px;
+            height: 24px;
         }
     </style>
 </head>
@@ -110,101 +110,96 @@
     <h1>Vieilles Caves de Provence</h1>
 </header>
 
-<section>
+<div class="section">
     <h2>Qui sommes-nous ?</h2>
-    <p class="center">
-        Entreprise familiale fondée en 1954 par la famille Rossi, les Vieilles Caves de Provence sont spécialisées dans la distribution de vins, champagnes, softs, spiritueux, bières et jus artisanaux.<br>
-        Notre expérience est à votre service pour vous proposer une sélection rigoureuse de produits authentiques et de qualité.<br>
-        Nous proposons également un service de conseil adapté aux problématiques du secteur CHR (Cafés, Hôtels, Restaurants).
+    <p>
+        Entreprise familiale fondée en 1954 par la famille Rossi, les Vieilles Caves de Provence sont spécialisées dans la distribution de vins, champagnes, bières, softs, spiritueux et jus artisanaux.<br>
+        Notre expérience est à votre service pour vous proposer une sélection rigoureuse de produits authentiques et de qualité. Nous proposons également un service de conseil adapté aux problématiques du CHR.
     </p>
-</section>
+</div>
 
-<section class="center">
-    <img src="assets/vcp-patrons.png" alt="Photo des fondateurs de VCP" width="180">
+<div class="section">
+    <img src="assets/vcp-patrons.png" alt="Photo des fondateurs de VCP" width="220">
     <p>Les dirigeants actuels de Vieilles Caves de Provence</p>
-</section>
+</div>
 
-<a href="#contact" class="cta-button">Demander le catalogue</a>
+<div class="section">
+    <button class="btn" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})">Demander le catalogue</button>
+</div>
 
-<section>
+<div class="section">
     <h2>Notre sélection</h2>
-    <div class="products">
-        <div class="product">
+    <div class="selection-grid">
+        <div class="bottle">
             <img src="assets/almadi-note.png" alt="Alma Di Note">
             <p><strong>Alma Di Note</strong><br>Rosé & Blanc</p>
         </div>
-        <div class="product">
+        <div class="bottle">
             <img src="assets/friandine.png" alt="Friandine">
             <p><strong>Friandine</strong><br>Blanc</p>
         </div>
-        <div class="product">
+        <div class="bottle">
             <img src="assets/amour-de-provence.png" alt="Amour de Provence">
             <p><strong>Amour de Provence</strong><br>Blanc</p>
         </div>
-        <div class="product">
+        <div class="bottle">
             <img src="assets/villa-treva.png" alt="Villa Tréva">
             <p><strong>Villa Tréva</strong><br>Rosé</p>
         </div>
-        <div class="product">
-            <img src="assets/chateau-fontvive-rouge.png" alt="Château Fontvive Rouge">
+        <div class="bottle">
+            <img src="assets/chateau-fontvive-rouge.png" alt="Château Fontvive">
             <p><strong>Château Fontvive</strong><br>Rouge</p>
         </div>
-        <div class="product">
-            <img src="assets/camille-cayran-reserve-rouge.png" alt="Camille Cayran Réserve Rouge">
+        <div class="bottle">
+            <img src="assets/camille-cayran-rouge.png" alt="Camille Cayran Rouge">
             <p><strong>Camille Cayran</strong><br>Réserve Rouge</p>
         </div>
-        <div class="product">
+        <div class="bottle">
             <img src="assets/domaine-fontvive.png" alt="Domaine Fontvive">
-            <p><strong>Domaine Fontvive</strong><br>Blanc, Rosé</p>
+            <p><strong>Domaine Fontvive</strong><br>Blanc & Rosé</p>
         </div>
-        <div class="product">
-            <img src="assets/dangin-fays.png" alt="Dangin-Fays Champagne Brut">
+        <div class="bottle">
+            <img src="assets/dangin-fays.png" alt="Champagne Dangin Fays">
             <p><strong>Dangin-Fays</strong><br>Champagne Brut</p>
         </div>
     </div>
-</section>
+</div>
 
-<section>
-    <h2>Jus / Softs / Eau</h2>
-    <div class="products">
-        <div class="product">
-            <img src="assets/orezza.png" alt="Orezza Eau gazeuse">
-            <p><strong>Orezza</strong><br>Eau gazeuse</p>
+<div class="section">
+    <h2>Jus, Softs & Eau</h2>
+    <div class="selection-grid">
+        <div class="bottle">
+            <img src="assets/orezza.png" alt="Orezza">
+            <p><strong>Orezza</strong><br>Eau minérale naturelle</p>
         </div>
     </div>
-</section>
+</div>
 
-<section>
+<div class="section">
     <h2>Nos partenaires</h2>
-    <div class="partners-logos">
-        <img src="assets/heineken.png" alt="Heineken">
-        <img src="assets/1664.png" alt="1664">
-        <img src="assets/vignerons-st-tropez.png" alt="Vignerons de Saint-Tropez">
-        <img src="assets/jaboulet-aine.png" alt="Maison Jaboulet Aîné">
-        <img src="assets/cassis-bodin.png" alt="Cassis Bodin">
-        <img src="assets/hortus.png" alt="Domaine de l’Hortus">
-        <img src="assets/maison-camille-cayran.png" alt="Maison Camille Cayran">
-        <img src="assets/fiumicicoli.png" alt="Domaine Fiumicicoli">
-        <img src="assets/millat.png" alt="Le MIA Jus">
-        <img src="assets/marrenon.png" alt="Maison Marrenon">
-        <img src="assets/pietra.png" alt="Brasserie Pietra">
+    <div class="partners">
+        <div class="partner-logo"><img src="assets/heineken.png" alt="Heineken"></div>
+        <div class="partner-logo"><img src="assets/1664.png" alt="1664"></div>
+        <div class="partner-logo"><img src="assets/vignerons-st-tropez.png" alt="Vignerons St-Tropez"></div>
+        <div class="partner-logo"><img src="assets/jaboulet-aine.png" alt="Paul Jaboulet Aîné"></div>
+        <div class="partner-logo"><img src="assets/cassis-bodin.png" alt="Cassis Bodin"></div>
+        <div class="partner-logo"><img src="assets/hortus.png" alt="Domaine de l'Hortus"></div>
+        <div class="partner-logo"><img src="assets/millat.png" alt="Le MIA (jus artisanaux)"></div>
+        <div class="partner-logo"><img src="assets/camille-cayran.png" alt="Maison Camille Cayran"></div>
+        <div class="partner-logo"><img src="assets/fiumicicoli.png" alt="Domaine Fiumicicoli"></div>
+        <div class="partner-logo"><img src="assets/maison-marrenon.png" alt="Maison Marrenon"></div>
+        <div class="partner-logo"><img src="assets/brasserie-pietra.png" alt="Brasserie Pietra"></div>
     </div>
-</section>
+</div>
 
-<footer id="contact">
+<div class="contact" id="contact">
     <h2>Contact</h2>
-    <p>📍 Marseille, France</p>
-    <p>📞 04 91 62 21 37</p>
-    <p>📧 <a href="mailto:vcp13001@gmail.com">vcp13001@gmail.com</a></p>
-    <p>
-        <a href="https://www.instagram.com/viellescavesprovence" target="_blank">
-            <img src="assets/instagram.png" alt="Instagram" class="social-icon"> @viellescavesprovence
-        </a>
-    </p>
-</footer>
+    <p>📧 vcp13001@gmail.com<br>📞 04 91 62 21 37</p>
+    <div class="instagram">
+        <img src="assets/instagram.png" alt="Instagram">
+        <a href="https://www.instagram.com/viellescavesprovence" style="color: white;">@viellescavesprovence</a>
+    </div>
+</div>
 
 </body>
 </html>
-
-
-  
