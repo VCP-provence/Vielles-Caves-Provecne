@@ -58,7 +58,7 @@
       width: fit-content;
     }
 
-    .wine-grid {
+    .product-grid {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
@@ -67,7 +67,7 @@
       margin: auto;
     }
 
-    .wine-card {
+    .product-card {
       background-color: #fdf8f2;
       border-radius: 10px;
       padding: 15px;
@@ -77,11 +77,11 @@
       box-sizing: border-box;
     }
 
-    .wine-card img {
+    .product-card img {
       width: 100%;
       height: auto;
       border-radius: 5px;
-      max-height: 320px;
+      max-height: 400px;
       object-fit: contain;
     }
 
@@ -129,7 +129,7 @@
     }
 
     @media screen and (max-width: 768px) {
-      .wine-card, .partner-card {
+      .product-card, .partner-card {
         flex: 0 0 100%;
       }
     }
@@ -168,43 +168,45 @@
 </section>
 
 <section>
-  <h2 style="text-align:center;">Notre sélection</h2>
-  <div class="wine-grid">
-    <div class="wine-card">
+  <h2 style="text-align:center;">Nos Vins</h2>
+  <div class="product-grid">
+    <div class="product-card">
       <img src="assets/almadi-note.png" alt="Alma Di Note">
       <strong>Alma Di Note</strong><br>Rosé & Blanc
     </div>
-    <div class="wine-card">
+    <div class="product-card">
       <img src="assets/friandine.png" alt="Friandine">
       <strong>Friandine</strong><br>Blanc
     </div>
-    <div class="wine-card">
+    <div class="product-card">
       <img src="assets/amour-de-provence.png" alt="Amour de Provence">
       <strong>Amour de Provence</strong><br>Blanc
     </div>
-    <div class="wine-card">
+    <div class="product-card">
+      <img src="assets/villa-treva.png" alt="Villa Tréva">
+      <strong>Villa Tréva</strong><br>Rosé
+    </div>
+    <div class="product-card">
       <img src="assets/chateau-fontvive-rose.png" alt="Fontvive Rosé">
       <strong>Château Fontvive</strong><br>Rosé
     </div>
-    <div class="wine-card">
+    <div class="product-card">
       <img src="assets/chateau-fontvive-rouge.png" alt="Fontvive Rouge">
       <strong>Château Fontvive</strong><br>Rouge
     </div>
-    <div class="wine-card">
-      <img src="assets/camille-cayran-reserve-rouge.png" alt="Camille Cayran">
-      <strong>Camille Cayran</strong><br>Réserve Rouge
-    </div>
-    <div class="wine-card">
-      <img src="assets/domaine-fontvive.png" alt="Domaine Fontvive">
-      <strong>Domaine Fontvive</strong>
-    </div>
-    <div class="wine-card">
+    <div class="product-card">
       <img src="assets/dangin-fays.png" alt="Dangin Fays">
       <strong>Dangin-Fays</strong><br>Champagne Brut
     </div>
-    <div class="wine-card">
-      <img src="assets/villa-treva.png" alt="Villa Tréva">
-      <strong>Villa Tréva</strong><br>Rosé
+  </div>
+</section>
+
+<section>
+  <h2 style="text-align:center;">Nos Bières & Softs</h2>
+  <div class="product-grid">
+    <div class="product-card">
+      <img src="assets/millat.png" alt="Alain Millat">
+      <strong>Le MIA</strong><br>Jus artisanaux
     </div>
   </div>
 </section>
@@ -245,10 +247,6 @@
       <p>Domaine Fiumicicoli</p>
     </div>
     <div class="partner-card">
-      <img src="assets/millat.png" alt="Alain Millat">
-      <p>Le MIA<br>(jus artisanaux)</p>
-    </div>
-    <div class="partner-card">
       <img src="assets/marrenon.png" alt="Maison Marrenon">
       <p>Maison Marrenon</p>
     </div>
@@ -274,3 +272,4 @@
 
 </body>
 </html>
+
