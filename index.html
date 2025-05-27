@@ -1,189 +1,178 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Vieilles Caves de Provence</title>
   <style>
     body {
-      margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #fdf9f4;
-      color: #4a1a1a;
-    }
-
-    header {
-      background-color: #6e1e1e;
-      padding: 20px;
-      text-align: center;
-    }
-
-    header img {
-      height: 70px;
-      margin-bottom: 10px;
-    }
-
-    h1 {
-      font-size: 28px;
-      color: white;
+      background-color: #fdf9f5;
+      color: #400000;
       margin: 0;
-      font-weight: normal;
-    }
-
-    .section {
-      padding: 40px 20px;
-      max-width: 1100px;
-      margin: auto;
+      padding: 0;
       text-align: center;
     }
-
-    .section img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 8px;
+    header {
+      background-color: #6a1b1b;
+      color: white;
+      padding: 1rem;
     }
-
-    .bottle-grid {
+    header img {
+      width: 80px;
+    }
+    h1 {
+      font-family: 'Brush Script MT', cursive;
+      font-size: 2.5rem;
+      margin: 0.5rem 0;
+    }
+    section {
+      margin: 2rem auto;
+      padding: 1rem;
+      max-width: 1000px;
+      background-color: #f8f3ee;
+      border-radius: 10px;
+      box-shadow: 3px 3px 0 #d9b8b8;
+    }
+    .produits, .softs {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      gap: 30px;
-      margin-top: 30px;
+      gap: 1rem;
     }
-
-    .bottle {
-      width: 200px;
-      background: #fff;
-      padding: 10px;
+    .produit {
+      background-color: white;
       border-radius: 10px;
-      box-shadow: 3px 3px 6px rgba(0,0,0,0.1);
+      width: 30%;
+      padding: 1rem;
+      box-shadow: 3px 3px 0 #d9b8b8;
     }
-
-    .bottle img {
-      width: 100%;
-      height: auto;
-      object-fit: contain;
+    .produit img {
+      max-height: 220px;
+      margin-bottom: 0.5rem;
     }
-
-    .cta-button {
-      display: inline-block;
-      padding: 12px 24px;
-      background-color: #6e1e1e;
+    .partenaire-logos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
+      margin-top: 1rem;
+    }
+    .partenaire-logos img {
+      max-height: 80px;
+    }
+    .btn {
+      background-color: #6a1b1b;
       color: white;
+      padding: 0.8rem 1.2rem;
+      border: none;
       border-radius: 5px;
       text-decoration: none;
+      display: inline-block;
+      margin: 1rem auto;
       font-weight: bold;
-      margin: 20px 0;
     }
-
-    .partners {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 25px;
-      margin-top: 30px;
-    }
-
-    .partner-logo img {
-      height: 60px;
-      object-fit: contain;
-    }
-
     footer {
-      background-color: #6e1e1e;
+      background-color: #6a1b1b;
       color: white;
-      padding: 40px 20px;
-      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
     }
-
-    .instagram {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-top: 15px;
-      gap: 10px;
-    }
-
-    .instagram img {
-      width: 20px;
-    }
-
-    .section-title {
-      font-size: 24px;
-      margin-bottom: 20px;
-      color: #6e1e1e;
+    footer img {
+      height: 20px;
+      vertical-align: middle;
+      margin-right: 5px;
     }
   </style>
 </head>
 <body>
+  <header>
+    <img src="assets/vcp-logo.png" alt="Logo VCP">
+    <h1>Vieilles Caves de Provence</h1>
+  </header>
 
-<header>
-  <img src="assets/vcp-logo.png" alt="Logo VCP">
-  <h1>Vieilles Caves de Provence</h1>
-</header>
+  <section>
+    <h2>Qui sommes-nous ?</h2>
+    <p>Entreprise familiale fondée en 1954 par la famille Rossi, les Vieilles Caves de Provence sont spécialisées dans la distribution de vins, champagnes, bières, spiritueux, jus et softs artisanaux.</p>
+    <p>Notre expérience est à votre service pour vous proposer une sélection rigoureuse de produits authentiques et de qualité.</p>
+    <p>Nous proposons également un <strong>service de conseil</strong> adapté aux problématiques spécifiques du secteur CHR.</p>
+  </section>
 
-<section class="section">
-  <h2 class="section-title">Qui sommes-nous ?</h2>
-  <p>
-    Entreprise familiale fondée en 1954 par la famille Rossi, les Vieilles Caves de Provence sont spécialisées dans la distribution de vins, champagnes, softs, spiritueux et jus artisanaux.<br>
-    Notre expérience est à votre service pour vous proposer une sélection rigoureuse de produits authentiques et de qualité. Nous proposons également un service de conseil adapté aux problématiques du secteur CHR.
-  </p>
-</section>
+  <section>
+    <img src="assets/fondateur-vcp.png" alt="Photo des fondateurs de VCP" style="max-height:200px;">
+    <p>Les dirigeants actuels de Vieilles Caves de Provence</p>
+  </section>
 
-<section class="section">
-  <img src="assets/fondateur-vcp.png" alt="Photo des fondateurs" width="220">
-  <p style="margin-top: 10px;">Les dirigeants actuels de Vieilles Caves de Provence</p>
-</section>
+  <a href="#contact" class="btn">Demander le catalogue</a>
 
-<section class="section">
-  <a class="cta-button" href="#contact">Demander le catalogue</a>
-</section>
+  <section>
+    <h2>Notre sélection</h2>
+    <div class="produits">
+      <div class="produit">
+        <img src="assets/almadi-note.png" alt="Alma Di Note">
+        <p>Alma Di Note<br>Rosé & Blanc</p>
+      </div>
+      <div class="produit">
+        <img src="assets/friandine-blanc.png" alt="Friandine">
+        <p>Friandine<br>Blanc</p>
+      </div>
+      <div class="produit">
+        <img src="assets/amour-provence-blanc.png" alt="Amour de Provence">
+        <p>Amour de Provence<br>Blanc</p>
+      </div>
+      <div class="produit">
+        <img src="assets/villa-treva.png" alt="Villa Tréva">
+        <p>Villa Tréva<br>Rosé</p>
+      </div>
+      <div class="produit">
+        <img src="assets/orthus-rouge.png" alt="Orthus">
+        <p>Domaine de l'Orthus<br>Rouge</p>
+      </div>
+      <div class="produit">
+        <img src="assets/camille-cayran-bouteille.png" alt="Camille Cayran">
+        <p>Camille Cayran<br>Réserve Rouge</p>
+      </div>
+    </div>
+  </section>
 
-<section class="section">
-  <h2 class="section-title">Notre sélection</h2>
-  <div class="bottle-grid">
-    <div class="bottle"><img src="assets/almadi-note.png" alt="Alma Di Note"><p>Alma Di Note<br>Rosé & Blanc</p></div>
-    <div class="bottle"><img src="assets/friandine.png" alt="Friandine"><p>Friandine<br>Blanc</p></div>
-    <div class="bottle"><img src="assets/amour-de-provence.png" alt="Amour de Provence"><p>Amour de Provence<br>Blanc</p></div>
-    <div class="bottle"><img src="assets/villa-treva.png" alt="Villa Tréva"><p>Villa Tréva<br>Rosé</p></div>
-    <div class="bottle"><img src="assets/chateau-fontvive-rouge.png" alt="Château Fontvive"><p>Château Fontvive<br>Rouge</p></div>
-    <div class="bottle"><img src="assets/camille-cayran-bouteille.png" alt="Camille Cayran"><p>Camille Cayran<br>Réserve Rouge</p></div>
-    <div class="bottle"><img src="assets/domaine-fontvive.png" alt="Domaine Fontvive"><p>Domaine Fontvive<br>Blanc & Rosé</p></div>
-    <div class="bottle"><img src="assets/dangin-fays.png" alt="Dangin-Fays"><p>Dangin-Fays<br>Champagne Brut</p></div>
-  </div>
-</section>
+  <section>
+    <h2>Eaux, Jus & Softs</h2>
+    <div class="softs">
+      <div class="produit">
+        <img src="assets/orezza.png" alt="Orezza">
+        <p>Orezza<br>Eau minérale</p>
+      </div>
+      <div class="produit">
+        <img src="assets/alain-milliat-mangue.png" alt="Alain Milliat">
+        <p>Alain Milliat<br>Nectar Mangue</p>
+      </div>
+    </div>
+  </section>
 
-<section class="section">
-  <h2 class="section-title">Jus, Softs & Eau</h2>
-  <div class="bottle-grid">
-    <div class="bottle"><img src="assets/orezza.png" alt="Orezza"><p>Orezza<br>Eau minérale</p></div>
-  </div>
-</section>
+  <section>
+    <h2>Nos partenaires</h2>
+    <div class="partenaire-logos">
+      <img src="assets/heineken.png" alt="Heineken" />
+      <img src="assets/1664.png" alt="1664" />
+      <img src="assets/vignerons-st-tropez.png" alt="Vignerons Saint-Tropez" />
+      <img src="assets/jaboulet-aine.png" alt="Jaboulet Ainé" />
+      <img src="assets/cassis-bodin.png" alt="Cassis Bodin" />
+      <img src="assets/hortus.png" alt="Domaine de l'Hortus" />
+      <img src="assets/camille-cayran.png" alt="Maison Camille Cayran" />
+      <img src="assets/fiumicicoli.png" alt="Domaine Fiumicicoli" />
+      <img src="assets/millat.png" alt="Le MIA" />
+      <img src="assets/marrenon.png" alt="Maison Marrenon" />
+      <img src="assets/pietra.png" alt="Brasserie Pietra" />
+    </div>
+  </section>
 
-<section class="section">
-  <h2 class="section-title">Nos partenaires</h2>
-  <div class="partners">
-    <div class="partner-logo"><img src="assets/heineken.png" alt="Heineken"></div>
-    <div class="partner-logo"><img src="assets/1664.png" alt="1664"></div>
-    <div class="partner-logo"><img src="assets/vignerons-st-tropez.png" alt="St-Tropez"></div>
-    <div class="partner-logo"><img src="assets/jaboulet-aine.png" alt="Jaboulet Aîné"></div>
-    <div class="partner-logo"><img src="assets/cassis-bodin.png" alt="Cassis Bodin"></div>
-    <div class="partner-logo"><img src="assets/hortus.png" alt="Domaine Hortus"></div>
-    <div class="partner-logo"><img src="assets/millat.png" alt="Le MIA"></div>
-    <div class="partner-logo"><img src="assets/camille-cayran.png" alt="Camille Cayran Maison"></div>
-    <div class="partner-logo"><img src="assets/fiumicicoli.png" alt="Fiumicicoli"></div>
-    <div class="partner-logo"><img src="assets/maison-marrenon.png" alt="Maison Marrenon"></div>
-    <div class="partner-logo"><img src="assets/brasserie-pietra.png" alt="Brasserie Pietra"></div>
-  </div>
-</section>
-
-<footer id="contact">
-  <h2>Contact</h2>
-  <p>📧 <a href="mailto:vcp13001@gmail.com" style="color: white;">vcp13001@gmail.com</a><br>📞 04 91 62 21 37</p>
-  <div class="instagram">
-    <img src="assets/instagram.png" alt="Instagram">
-    <a href="https://www.instagram.com/viellescavesprovence" target="_blank" style="color: white;">@viellescavesprovence</a>
-  </div>
-</footer>
-
+  <footer id="contact">
+    <p>Contactez-nous : vcp13001@gmail.com | 04 91 62 21 37</p>
+    <p>
+      <a href="https://www.instagram.com/viellescavesprovence" style="color: white; text-decoration: none;" target="_blank">
+        <img src="assets/instagram.png" alt="Instagram" /> @viellescavesprovence
+      </a>
+    </p>
+  </footer>
 </body>
 </html>
