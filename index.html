@@ -21,7 +21,6 @@
       height: 80px;
     }
     h1 {
-      font-family: 'Pacifico', cursive;
       font-size: 32px;
       margin: 10px 0;
     }
@@ -31,7 +30,6 @@
       padding: 20px;
       background-color: #f9f4ef;
       border-radius: 10px;
-      box-shadow: 5px 5px 0 #d4a29c;
       text-align: center;
     }
     section img {
@@ -52,6 +50,12 @@
     .item {
       width: 200px;
       text-align: center;
+    }
+    .highlight {
+      background-color: #ffe5e5;
+      border: 2px dashed #b22222;
+      padding: 10px;
+      border-radius: 10px;
     }
     .button {
       background-color: #6f1d1b;
@@ -88,57 +92,27 @@
   </header>
 
   <section>
-    <div class="title">Qui sommes-nous ?</div>
-    <p>Entreprise familiale fondée en 1954 par la famille Rossi, les Vieilles Caves de Provence sont spécialisées dans la distribution de vins, champagnes, bières, jus et spiritueux artisanaux.</p>
-    <p>Notre expérience est à votre service pour vous proposer une sélection rigoureuse de produits authentiques et de qualité. Nous offrons également un service de conseil adapté aux problématiques du CHR.</p>
-  </section>
-
-  <section>
-    <img src="assets/fondateur-vcp.png" alt="Photo des fondateurs de VCP" style="height: 250px;" />
-    <p>Les dirigeants actuels de Vieilles Caves de Provence</p>
-  </section>
-
-  <section>
-    <a href="#contact" class="button">Demander le catalogue</a>
-  </section>
-
-  <section>
     <div class="title">Notre sélection</div>
     <div class="grid">
-      <div class="item"><img src="assets/almadi-note.png" alt="Alma Di Note"><p>Alma Di Note</p></div>
-      <div class="item"><img src="assets/friandine-blanc.png" alt="Friandine Blanc"><p>Friandine Blanc</p></div>
-      <div class="item"><img src="assets/amour-de-provence.png" alt="Amour de Provence"><p>Amour de Provence</p></div>
-      <div class="item"><img src="assets/villa-treva.png" alt="Villa Tréva"><p>Villa Tréva</p></div>
-      <div class="item"><img src="assets/chateau-fontvive-rouge.png" alt="Château Fontvive Rouge"><p>Château Fontvive Rouge</p></div>
-      <div class="item"><img src="assets/camille-cayran-bouteille.png" alt="Camille Cayran"><p>Camille Cayran</p></div>
-      <div class="item"><img src="assets/domaine-fontvive.png" alt="Domaine Fontvive"><p>Domaine Fontvive</p></div>
-      <div class="item"><img src="assets/fiumicicoli.png" alt="Fiumicicoli"><p>Domaine Fiumicicoli</p></div>
-      <div class="item"><img src="assets/chateau-la-coste.png" alt="Château La Coste"><p>Château La Coste</p></div>
-      <div class="item"><img src="assets/jaboulet-aine.png" alt="Jaboulet Aîné"><p>Paul Jaboulet Aîné</p></div>
-      <div class="item"><img src="assets/dangin-fays.png" alt="Dangin Fays"><p>Dangin Fays</p></div>
+      <div class="item"><img src="assets/almadi-note.png"><p>Alma Di Note</p></div>
+      <div class="item"><img src="assets/friandine-blanc.png"><p>Friandine Blanc</p></div>
+      <div class="item highlight"><img src="assets/amour-de-provence.png"><p><strong>Amour de Provence</strong></p></div>
+      <div class="item"><img src="assets/villa-treva.png"><p>Villa Tréva</p></div>
+      <div class="item"><img src="assets/chateau-fontvive-rouge.png"><p>Château Fontvive Rouge</p></div>
+      <div class="item"><img src="assets/camille-cayran-bouteille.png"><p>Camille Cayran</p></div>
+      <div class="item"><img src="assets/domaine-fontvive.png"><p>Domaine Fontvive</p></div>
+      <div class="item"><img src="assets/fiumicicoli.png"><p>Domaine Fiumicicoli</p></div>
+      <div class="item"><img src="assets/chateau-la-coste.png"><p>Château La Coste</p></div>
+      <div class="item"><img src="assets/jaboulet-aine.png"><p>Paul Jaboulet Aîné</p></div>
+      <div class="item"><img src="assets/dangin-fays.png"><p>Dangin Fays</p></div>
     </div>
   </section>
 
   <section>
     <div class="title">Eaux, Jus & Softs</div>
     <div class="grid">
-      <div class="item"><img src="assets/orezza.png" alt="Orezza"><p>Eau minérale Orezza</p></div>
-      <div class="item"><img src="assets/alain-milliat-jus.png" alt="Alain Milliat"><p>Jus Alain Milliat</p></div>
-    </div>
-  </section>
-
-  <section>
-    <div class="title">Nos partenaires</div>
-    <div class="grid">
-      <div class="item"><img src="assets/heineken.png" alt="Heineken"><p>Heineken</p></div>
-      <div class="item"><img src="assets/1664.png" alt="1664"><p>1664</p></div>
-      <div class="item"><img src="assets/vignerons-st-tropez.png" alt="Vignerons de Saint-Tropez"><p>Vignerons de Saint-Tropez</p></div>
-      <div class="item"><img src="assets/cassis-bodin.png" alt="Cassis Bodin"><p>Cassis Bodin</p></div>
-      <div class="item"><img src="assets/marrenon.png" alt="Maison Marrenon"><p>Maison Marrenon</p></div>
-      <div class="item"><img src="assets/pietra.png" alt="Brasserie Pietra"><p>Brasserie Pietra</p></div>
-      <div class="item"><img src="assets/camille-cayran-logo.png" alt="Camille Cayran"><p>Camille Cayran</p></div>
-      <div class="item"><img src="assets/millat.png" alt="Alain Milliat"><p>Alain Milliat</p></div>
-      <div class="item"><img src="assets/domaine-hortus.png" alt="Domaine de l'Hortus"><p>Domaine de l’Hortus</p></div>
+      <div class="item"><img src="assets/orezza.png"><p>Orezza</p></div>
+      <div class="item highlight"><img src="assets/alain-milliat-jus.png"><p><strong>Alain Milliat</strong></p></div>
     </div>
   </section>
 
@@ -153,4 +127,3 @@
   </footer>
 </body>
 </html>
-
