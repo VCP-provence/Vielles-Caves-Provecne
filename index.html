@@ -2,151 +2,157 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Vieilles Caves de Provence</title>
-
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2M437V2Y2Q"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-2M437V2Y2Q');
-  </script>
-
-  <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: 'Merriweather', serif;
-      background-color: #fffdf9;
       margin: 0;
-      padding: 0;
-      color: #1a1a1a;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fdf9f5;
+      color: #3a0d0d;
     }
     header {
-      background-color: #8e3b3b;
+      background-color: #6f1d1b;
       color: white;
-      padding: 60px 20px;
       text-align: center;
-      position: relative;
+      padding: 30px 0;
     }
-    header .logo {
-      position: absolute;
-      top: 20px;
-      left: 20px;
-      width: 80px;
+    header img {
+      height: 80px;
     }
-    header h1 {
-      font-family: 'Caveat Brush', cursive;
-      font-size: 64px;
-      margin: 0;
-      font-weight: normal;
-    }
-    header p {
-      font-size: 20px;
-      margin-top: 10px;
-    }
-    .cta {
-      display: inline-block;
-      margin-top: 30px;
-      padding: 15px 30px;
-      background-color: #7a1e1e;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
+    h1 {
+      font-size: 32px;
+      margin: 10px 0;
     }
     section {
-      max-width: 1000px;
-      margin: auto;
-      padding: 60px 20px;
+      margin: 30px auto;
+      max-width: 1100px;
+      padding: 20px;
+      background-color: #f9f4ef;
+      border-radius: 10px;
+      text-align: center;
     }
-    section h2 {
-      color: #7a1e1e;
-      font-size: 32px;
-      margin-bottom: 30px;
+    section img {
+      max-height: 200px;
+      margin-bottom: 10px;
     }
-    section p {
-      font-size: 16px;
-      line-height: 1.6;
+    .title {
+      font-weight: bold;
+      font-size: 24px;
+      margin-bottom: 15px;
     }
     .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
       gap: 30px;
     }
-    .product-card, .partner-card {
-      background-color: #f9f5ef;
-      border-left: 8px solid #7a1e1e;
-      border-radius: 10px;
-      padding: 20px;
+    .item {
+      width: 200px;
       text-align: center;
     }
-    .product-card img, .partner-card img {
-      max-width: 160px;
-      height: auto;
-      display: block;
-      margin: 0 auto 15px;
-      border-radius: 10px;
-    }
-    .contact {
-      background-color: #8e3b3b;
+    .button {
+      background-color: #6f1d1b;
       color: white;
-      padding: 50px 20px;
-      text-align: center;
-    }
-    .contact a {
-      color: #f9f5ef;
-      text-decoration: underline;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      display: inline-block;
+      margin-top: 20px;
     }
     footer {
-      text-align: center;
-      padding: 20px;
-      font-size: 14px;
-      background-color: #111;
+      background-color: #6f1d1b;
       color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    footer a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+    .contact-info img {
+      height: 20px;
+      vertical-align: middle;
+      margin-right: 8px;
+    }
+    .bio-photo {
+      max-width: 400px;
+      margin-top: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+    .partner-logo.marrenon {
+      width: 150px;
     }
   </style>
 </head>
-<body>
 
+<body>
   <header>
-    <img src="assets/vcp-logo.png" alt="Logo VCP" class="logo">
+    <img src="assets/vcp-logo.png" alt="Logo VCP" />
     <h1>Vieilles Caves de Provence</h1>
-    <p>Distributeur de vins, jus, softs et spiritueux pour professionnels et particuliers</p>
-    <a href="#contact" class="cta">Demander le catalogue</a>
   </header>
 
   <section>
-    <h2>Qui sommes-nous ?</h2>
-    <p>Entreprise familiale fondée en 1954 par la famille Rossi. Basés à Marseille, nous distribuons vins, spiritueux, jus et boissons artisanales. Notre sélection valorise les producteurs bio, HVE, vegan, et les grandes maisons reconnues. Nous servons restaurants, bars, cavistes, épiceries, collectivités et particuliers exigeants. Réactivité, stock local, livraisons rapides : notre expertise à votre service.</p>
-    <div class="partner-card" style="margin-top:40px;">
-      <img src="assets/fondateurs-vcp.png" alt="Photo des fondateurs de VCP">
-      <div>Les dirigeants actuels de Vieilles Caves de Provence</div>
+    <div class="title">Qui sommes-nous ?</div>
+    <p>
+      Entreprise familiale fondée en 1954 par la famille Rossi, Vieilles Caves de Provence est aujourd’hui un acteur reconnu dans la distribution de vins, spiritueux, jus, softs et eaux minérales.  
+      <br><br>
+      Notre expertise s’adresse aux professionnels du CHR, collectivités et particuliers exigeants, avec un service de conseil adapté à chaque besoin.
+    </p>
+    <img src="assets/fondateur-vcp.png" alt="Photo des fondateurs" class="bio-photo"/>
+    <br>
+    <a href="#contact" class="button">📩 Demander le catalogue</a>
+  </section>
+
+  <section>
+    <div class="title">Notre sélection</div>
+    <div class="grid">
+      <div class="item"><img src="assets/almadi-note.png" alt="Alma Di Note"><p>Alma Di Note</p></div>
+      <div class="item"><img src="assets/friandine-blanc.png" alt="Friandine Blanc"><p>Friandine Blanc</p></div>
+      <div class="item"><img src="assets/amour-de-provence.png" alt="Amour de Provence"><p>Amour de Provence</p></div>
+      <div class="item"><img src="assets/villa-treva.png" alt="Villa Tréva"><p>Villa Tréva</p></div>
+      <div class="item"><img src="assets/chateau-fontvive-rouge.png" alt="Château Fontvive Rouge"><p>Château Fontvive Rouge</p></div>
+      <div class="item"><img src="assets/camille-cayran-bouteille.png" alt="Camille Cayran"><p>Camille Cayran</p></div>
+      <div class="item"><img src="assets/domaine-fontvive.png" alt="Domaine Fontvive"><p>Domaine Fontvive</p></div>
     </div>
   </section>
 
   <section>
-    <h2>Notre sélection</h2>
+    <div class="title">Eaux, Jus & Softs</div>
     <div class="grid">
-      <div class="product-card">
-        <img src="assets/almadinote.png" alt="Alma Di Note">
-        <div>Alma Di Note Rosé & Blanc</div>
-      </div>
+      <div class="item"><img src="assets/orezza.png" alt="Orezza"><p>Eau Orezza</p></div>
+      <div class="item"><img src="assets/alain-milliat-jus.png" alt="Alain Milliat"><p>Jus Alain Milliat</p></div>
     </div>
   </section>
 
-  <section class="contact" id="contact">
-    <h2>Contact</h2>
-    <p>Une question ? Un devis ? Contactez-nous :</p>
-    <p>📍 137 boulevard Longchamp, 13001 Marseille</p>
-    <p>📞 04 91 62 21 37</p>
-    <p>📧 <a href="mailto:vcp13001@gmail.com">vcp13001@gmail.com</a></p>
+  <section>
+    <div class="title">Nos partenaires</div>
+    <div class="grid">
+      <div class="item"><img src="assets/heineken.png" alt="Heineken"><p>Heineken</p></div>
+      <div class="item"><img src="assets/1664.png" alt="1664"><p>1664</p></div>
+      <div class="item"><img src="assets/vignerons-st-tropez.png" alt="Vignerons de Saint-Tropez"><p>Vignerons de Saint-Tropez</p></div>
+      <div class="item"><img src="assets/cassis-bodin.png" alt="Cassis Bodin"><p>Cassis Bodin</p></div>
+      <div class="item"><img src="assets/marrenon.png" alt="Maison Marrenon" class="partner-logo marrenon"><p>Maison Marrenon</p></div>
+      <div class="item"><img src="assets/pietra.png" alt="Brasserie Pietra"><p>Brasserie Pietra</p></div>
+      <div class="item"><img src="assets/camille-cayran-logo.png" alt="Camille Cayran"><p>Camille Cayran</p></div>
+      <div class="item"><img src="assets/millat.png" alt="Alain Milliat"><p>Alain Milliat</p></div>
+      <div class="item"><img src="assets/domaine-hortus.png" alt="Domaine de l'Hortus"><p>Domaine de l’Hortus</p></div>
+      <div class="item"><img src="assets/chateau-la-coste.png" alt="Château La Coste"><p>Château La Coste</p></div>
+      <div class="item"><img src="assets/jaboulet-aine.png" alt="Paul Jaboulet Aîné"><p>Paul Jaboulet Aîné</p></div>
+      <div class="item"><img src="assets/fiumicicoli.png" alt="Fiumicicoli"><p>Domaine Fiumicicoli</p></div>
+    </div>
   </section>
 
-  <footer>
-    <p>© Vieilles Caves de Provence – Tous droits réservés</p>
+  <footer id="contact">
+    <p><strong>Contact</strong></p>
+    <p class="contact-info">
+      <img src="assets/instagram.png" alt="Instagram" />
+      <a href="https://www.instagram.com/viellescavesprovence" target="_blank">@viellescavesprovence</a>
+    </p>
+    <p>Email : <a href="mailto:vcp13001@gmail.com">vcp13001@gmail.com</a></p>
+    <p>Téléphone : <a href="tel:0491622137">04 91 62 21 37</a></p>
   </footer>
-
 </body>
 </html>
